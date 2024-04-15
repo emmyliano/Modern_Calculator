@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include"standard.h"
+/* #include"standard.h"  */
 
 int main ()
 {
     char operator;
     double num1, num2, result;
     char choice = 'y'; // Initialize choice with 'y'
+
 
     while (choice == 'y' || choice == 'Y')
     {  
