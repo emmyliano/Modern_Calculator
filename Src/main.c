@@ -31,7 +31,7 @@ int main()
                 stand();
                 break;
             case 2:
-                scientificMenu();
+                scientific_main();
                 break;
             case 3:
                 b_main();
@@ -57,7 +57,7 @@ int stand()
     char choice = 'y'; // Initialize choice with 'y'
 
     while (choice == 'y' || choice == 'Y') {  
-        printf("Press 'e' to Exit, 'm' to go back to Mode selection\n");
+        printf("\nPress 'e' to Exit, 'm' to go back to Mode selection\n");
         printf("Enter an operator (+, -, *, /): ");
         scanf(" %c", &operator);
 
@@ -67,10 +67,10 @@ int stand()
             return 0; // Return to mode selection
         }
 
-        printf("Enter first number: ");
+        printf("\nEnter first number: ");
         scanf("%lf", &num1);
         
-        printf("Enter second number: ");
+        printf("\nEnter second number: ");
         scanf("%lf", &num2);
 
         switch (operator) {
@@ -113,7 +113,7 @@ int b_main()
     for (isValid = 1; i <= 4; i++){ // if the user enters an invalid input, this will loop the menu, till input is correct
             int option;
 
-            printf("Enter:\n");
+            printf("\nEnter:\n");
             printf("1. Convert Decimal to Binary\n");
             printf("2. Convert Binary to Decimal\n");
             printf("3. Return to main menu\n");
@@ -203,9 +203,8 @@ int scientific_main()
     int i;
     char stop;
 	for (i = 1; i<= 5; i++){ // This should keep this function running till stop
-
         if(i >= 2){
-            printf("Input E to return to mode selection\nPress any other key to continue\n");
+            printf("\nInput E to return to mode selection\nPress any other key to continue\n");
             printf("> ");
             scanf("%s", &stop);
             
@@ -252,7 +251,7 @@ int scientificMenu(){
                 continue;
             // link the main menu here
             case 5:
-                printf("The program has been terminated");
+                printf("\nThe program has been terminated\n");
                 return 0;
             default : 
                 printf("\nInvalid Input!\n");
@@ -352,7 +351,7 @@ void trig()
         break;
 
     default:
-        printf("Invalid input");
+        printf("\nInvalid input");
         break;
     }
 }
