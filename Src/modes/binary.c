@@ -1,9 +1,9 @@
 #include<stdio.h>
-#include"binary.h"
+// #include"../Header_file/binary.h"
 void D2B(); // decimal to binary conversion
 void B2D(); // binary to decimal conversion
 
-int main()
+int b_main()
 {
    int mode, j, k;
    int i = 1;

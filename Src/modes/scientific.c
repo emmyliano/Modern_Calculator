@@ -5,8 +5,9 @@ void square_root();
 void square();
 void trig();
 int scientificMenu();
+int scientific_main();
 
-int /*scientific */ main()
+int scientific_main()
 {
     int i;
     char stop;

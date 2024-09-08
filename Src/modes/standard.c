@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /* #include"standard.h"  */
 
-int main ()
+int s_main()
 {
     char operator;
     double num1, num2, result;
